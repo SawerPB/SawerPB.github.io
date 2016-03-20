@@ -1,0 +1,161 @@
+﻿
+#container {
+    /*width: 8.5in;*/
+    max-width: 8.5in;
+    min-width: 4in;
+    margin: 0 auto;
+}
+
+@media screen {
+    .hidden > div {
+        display: none;
+    }
+
+    .hideable > header {
+        background-image: url("../Images/simpleminus.png");
+        background-size: 25px 25px;
+        background-repeat: no-repeat;
+        padding-left: 28px;
+    }
+
+    .hidden > header {
+        background-image: url("../Images/simpleplus.png");
+    }
+
+    #expandall {
+        background-image: url("../Images/simpleplus.png");
+        background-size: 25px 25px;
+        background-repeat: no-repeat;
+        padding-left: 28px;
+        float: left;
+    }
+
+    #collapseall {
+        background-size: 25px 25px;
+        background-repeat: no-repeat;
+        padding-left: 28px;
+        background-image: url("../Images/simpleminus.png");
+        float: left;
+        margin-left: 0.3in;
+    }
+
+    #buttons {
+        font-weight: bold;
+        font-size: 1.2em;
+        cursor: pointer;
+    }
+}
+
+
+
+
+img {
+    border: none;
+}
+
+ul {
+    font-weight: bold;
+    margin-left: -0.25in;
+    margin-top: 0in;
+}
+
+    ul li {
+        font-weight: normal;
+        margin-left: 0.25in;
+    }
+
+#content {
+    max-width: 7.5in;
+    margin: 0.5in;
+    font-family: 'Trebuchet MS', Arial;
+}
+
+nav {
+    padding-top: 0.25in;
+}
+
+#bigheader > img, #bigheader > div {
+    float: left;
+}
+
+#bigheader > div {
+    padding-left: 0.5in;
+    min-width: 3.5in;
+}
+
+#bigheader {
+    height: 172px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#col1 {
+    float: left;
+    min-width: 2.5in;
+    width: 40%;
+}
+
+section div:first-of-type {
+    clear: both;
+}
+
+#col2 {
+    float: left;
+}
+
+section {
+    padding-top: 0.25in;
+    clear: both;
+}
+
+    section > header {
+        float: left;
+        width: 100%;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+
+    section > div {
+        float: left;
+        padding: 10px;
+    }
+
+.hideable > header:hover {
+    cursor: pointer;
+}
+
+#buttons div:first-child {
+    clear: both;
+}
+
+ul > em {
+    font-weight: normal;
+    color: darkblue;
+}
+
+li > em {
+    font-weight: normal;
+}
+
+footer {
+    font-size: 0.8em;
+    margin: 0.75in 0 0.25in 0;
+    clear:both;
+}
+
+
+@media print {
+    #buttons {
+        display: none;
+    }
+}
+
+@media screen and (max-width:700px) {
+    #meimg {
+        display: none;
+    }
+
+    #bigheader > div {
+        padding-left: 0.25in;
+    }
+}
